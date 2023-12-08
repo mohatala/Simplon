@@ -24,10 +24,9 @@ public class App {
 			System.out.println("Pour Ajouter un Etudiant taper 1");
 			System.out.println("Pour Ajouter Des Notes taper 2");
 			System.out.println("Pour Afficher les Note d'un etudiant taper 3");
-			System.out.println("Pour Afficher Tous taper  4");
-			System.out.println("Pour Calculer la Moyenne pour chaque Matiere taper 5");
-			System.out.println("Pour Calculer la Moyenne Generale taper 6");
-			System.out.println("Pour Supprimer Etudiant taper 7");
+			System.out.println("Pour Calculer la Moyenne pour chaque Matiere taper 4");
+			System.out.println("Pour Calculer la Moyenne Generale taper 5");
+			System.out.println("Pour Supprimer Etudiant taper 6");
 			System.out.println("Pour Quitter taper 0");
 			c= cl.nextInt();
 			switch (c) {
@@ -57,10 +56,6 @@ public class App {
 				break;
 			}
 			case 4:{
-				gm.showAll();
-				break;
-			}
-			case 5:{
 				System.out.println("Nom Etudiant a chercher:");
 				String name_etudiant= cl.next();
 				System.out.println("Matiere a Calculer:");
@@ -74,14 +69,14 @@ public class App {
 				
 				break;
 			}
-			case 6:{
+			case 5:{
 				System.out.println("Nom Etudiant a chercher:");
 				String name_etudiant= cl.next();
 				System.out.println("La Moyenne Generale de l'Etudiant "+name_etudiant+" est :");
 				System.out.println(gm.calculer_Moyenne_Generale(name_etudiant));
 				break;
 			}
-			case 7:{
+			case 6:{
 				System.out.println("Nom Etudiant a Supprimer:");
 				String name_etudiant= cl.next();
 				if(gm.supprimer_Etudiant(name_etudiant)) {
@@ -99,7 +94,6 @@ public class App {
 				db.save_Data_Etudiant(gm.etudiant_list);
 				db.setFilePath("Notes.csv");
 				db.save_Data_Notes(gm.note_List);
-
 				
 			}
 		}while(c!=0);
