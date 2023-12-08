@@ -25,7 +25,7 @@ public class GestManager {
 		return -1;
 	}
 	
-	public void addEtudiant() {
+	public void add_Etudiant() {
 		Scanner cl=new Scanner(System.in);
 		System.out.println("Nom Etudiant:");
 		String n= cl.next();

@@ -33,7 +33,7 @@ public class App {
 			c= cl.nextInt();
 			switch (c) {
 			case 1: {
-				gm.addEtudiant();
+				gm.add_Etudiant();
 				break;
 			}
 			case 2: {
@@ -45,7 +45,7 @@ public class App {
 					System.out.print("Etudiant N'existe pas , Voulez vous l'ajouter? ( 'y' pour oui 'n' pour non)");
 					String s=cl.next();
 					if(s.equals("y")) {
-						gm.addEtudiant();
+						gm.add_Etudiant();
 					}
 				}
 				break;
@@ -67,7 +67,6 @@ public class App {
 				}else {
 					System.out.println("Etudiant ou Matiere n'existe pas");
 				}
-				
 				break;
 			}
 			case 5:{
