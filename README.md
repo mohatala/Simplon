@@ -1,12 +1,12 @@
 # Simplon
  Simplon BootCamp
 
-##Premier Brief [Gestionnaire Des Notes](https://github.com/mohatala/Simplon/tree/main/src/gestionnaire_Notes)
+## Premier Brief [Gestionnaire Des Notes](https://github.com/mohatala/Simplon/tree/main/src/gestionnaire_Notes)
 
-##Les Fonctionnalites principales:
+## Les Fonctionnalites principales:
 
  -Ajout un etudiant
-  Methode pour ajouter le nom et date naissance et niveau d'un etudiant
+  Methode pour ajouter le nom et date naissance et niveau d'un etudiant /n
  -Suppression un etudiant
  Methode pour supprimer un etudiant par nom
  -Ajout des Notes par Matiere
