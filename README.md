@@ -5,17 +5,18 @@
 
 ## Les Fonctionnalites principales:
 
- -Ajout un etudiant
-  Methode pour ajouter le nom et date naissance et niveau d'un etudiant /n
- -Suppression un etudiant
- Methode pour supprimer un etudiant par nom
- -Ajout des Notes par Matiere
- Methode pour ajouter des notes pour une matiere
- -Calcule de la Note Moyenne par Matiere
- Methode pour calculer la moyenne de chaque matiere
- -Calcule de la Moyenne Generale
- Methode pour calculer la moyenne generale
- -Sauvegard dans un fichier csv
- Utilisation d'un fichier csv pour sauvegarder et recuperer les donnees 
+Vous pouvez trouves les methodes de ces fonctionnalites dans le Fichier  [GestManager.java](https://github.com/mohatala/Simplon/tree/main/src/gestionnaire_Notes/GestManager.java) <br /> <br />
+ -Ajout un etudiant <br />
+  Methode pour ajouter le nom et date naissance et niveau d'un etudiant <br /><br />
+ -Suppression un etudiant <br />
+ Methode pour supprimer un etudiant par nom <br /> <br />
+ -Ajout des Notes par Matiere <br />
+ Methode pour ajouter des notes pour une matiere <br /> <br />
+ -Calcule de la Note Moyenne par Matiere <br />
+ Methode pour calculer la moyenne de chaque matiere <br /> <br />
+ -Calcule de la Moyenne Generale <br />
+ Methode pour calculer la moyenne generale <br /><br />
+ -Sauvegard dans un fichier csv <br />
+ Utilisation d'un fichier csv pour sauvegarder et recuperer les donnees  <br />
  
  
