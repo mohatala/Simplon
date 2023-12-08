@@ -3,9 +3,8 @@ package gestionnaire_Notes;
 import java.util.ArrayList;
 
 public class Note {
-	
+	//class pour ajouter la matiere et ces notes
 	private String libelle;
-	//private float Note;
 	private int Id_Etudiant;
 	private ArrayList<Float> Notes= new ArrayList<>();
 	
@@ -13,7 +12,6 @@ public class Note {
 	
 	public Note(String matiere, float note,int id_etudiant) {
 		this.libelle = matiere;
-		//this.Note = note;
 		this.Id_Etudiant=id_etudiant;
 		this.Notes.add(note);
 	}

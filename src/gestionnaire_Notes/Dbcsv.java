@@ -9,11 +9,14 @@ import java.util.ArrayList;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+
 public class Dbcsv {
 	private String FilePath;
 	BufferedWriter bw;
 	String CSV_SEPARATOR=",";
 	GestManager gm=new GestManager();
+	
+	//Getter and Setter
 	public String getFilePath() {
 		return FilePath;
 	}
@@ -22,6 +25,7 @@ public class Dbcsv {
 		FilePath = filePath;
 	}
 	
+	//Methode pour sauvegarder list de Etudiant dans fichier csv
 	public void save_Data_Etudiant(ArrayList<Etudiant> list ) {
 		try
         {
@@ -44,6 +48,8 @@ public class Dbcsv {
         catch (FileNotFoundException e){}
         catch (IOException e){}
 	}
+	
+	//Methode pour recuperer list des etudiants a partir fichier csv
 	public ArrayList<Etudiant> get_Data_Etudiant() {
 		String line;
 			try {
@@ -53,6 +59,7 @@ public class Dbcsv {
 					Etudiant et=new Etudiant(s[0],s[1],s[2]);
 					gm.etudiant_list.add(et);
 				}
+				bf.close();
 				return gm.etudiant_list;
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -62,6 +69,8 @@ public class Dbcsv {
 			
 			
 	}
+	
+	//Methode pour sauvegarder list des notes dans fichier csv
 	public void save_Data_Notes(ArrayList<Note> list ) {
 		try
         {
@@ -88,6 +97,7 @@ public class Dbcsv {
         catch (IOException e){}
 	}
 	
+	//Methode pour recuperer list des notes a partir fichier csv
 	public ArrayList<Note> get_Data_Notes() {
 		String line;
 			try {
@@ -102,6 +112,7 @@ public class Dbcsv {
 					}
 					gm.note_List.add(et);
 				}
+				bf.close();
 				return gm.note_List;
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

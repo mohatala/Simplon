@@ -2,11 +2,8 @@ package gestionnaire_Notes;
 
 public class Etudiant {
 	
-	
 	private String Nom;
-	
 	private String Date_Naissance;
-
 	private String Niveau;
 
 	public Etudiant() {}

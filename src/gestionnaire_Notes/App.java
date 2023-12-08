@@ -7,14 +7,16 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner cl =new Scanner(System.in);
+		Scanner cl=new Scanner(System.in);
 		GestManager gm=new GestManager();
-		Etudiant e;
+		
+		/****recuperer les donnees a partir fichier csv****/
 		Dbcsv db=new Dbcsv();
 		db.setFilePath("etudiants.csv");
 		gm.etudiant_list=db.get_Data_Etudiant();
 		db.setFilePath("Notes.csv");
 		gm.note_List=db.get_Data_Notes();
+		/**************************************/
 		System.out.println("Merci de Saisir Votre Nom:");
 		String username= cl.next();
 		int c=0;
@@ -45,7 +47,6 @@ public class App {
 					if(s.equals("y")) {
 						gm.addEtudiant();
 					}
-					//gm.addNotes(n);
 				}
 				break;
 			}
@@ -85,17 +86,17 @@ public class App {
 				else {
 					System.out.println("Etudiant n'existe pas");
 				}
-				
 				break;
 			}
 			}
+			/********Sauvegarder des donnees*************/
 			if(c==0) {
 				db.setFilePath("etudiants.csv");
 				db.save_Data_Etudiant(gm.etudiant_list);
 				db.setFilePath("Notes.csv");
 				db.save_Data_Notes(gm.note_List);
-				
 			}
+			/****************************************/
 		}while(c!=0);
 		
 	}

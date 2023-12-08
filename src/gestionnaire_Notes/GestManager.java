@@ -119,10 +119,5 @@ public class GestManager {
 		}
 		return s/count;
 	}
-	/*public void showAll() {
-		etudiant_list.forEach(t -> System.out.println(t));
-		//note_List.forEach(t -> System.out.println(t));
-		//matiere_List.forEach(t -> System.out.println(t));	
-	}*/
 	
 }
